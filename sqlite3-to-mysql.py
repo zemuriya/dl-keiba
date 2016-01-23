@@ -17,7 +17,7 @@ def processLine(line):
         line.startswith("INSERT INTO \"sqlite_sequence\"")
        ):
         return
-    line = line.replace("AUTOINCREMENT", "AUTO_INCREMENT")
+    #line = line.replace("AUTOINCREMENT", "AUTO_INCREMENT")
     line = line.replace("DEFAULT 't'", "DEFAULT '1'")
     line = line.replace("DEFAULT 'f'", "DEFAULT '0'")
     line = line.replace(",'t'", ",'1'")
